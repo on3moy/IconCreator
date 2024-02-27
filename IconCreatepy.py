@@ -1,10 +1,12 @@
 from PIL import Image
 import os
 
+# Variables
 IMAGES = './Images/'
 SAVE = './Icons/'
 EXT = '.ico'
 
+# Iterate through all the images in the images folder and export them as icons within icon folder.
 def main():
     for image in os.listdir(IMAGES):
         icon = Image.open(IMAGES + '/' + image)
